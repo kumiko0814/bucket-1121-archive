@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>11/21 勉強会アーカイブ｜BUCKET LIST × Re:che</title>
+<style>
+:root{
+  --bg:#f1f7fb; --navy:#26405f; --navy2:#1d3149;
+  --pink:#cf8f9c; --pink2:#b06f7d; --pinkbg:#fbeef1;
+  --blue:#7fb0d2; --text:#4a4446; --muted:#8a97a5; --line:#d9e5ee;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:"Yu Gothic","YuGothic","游ゴシック","Hiragino Kaku Gothic ProN","Hiragino Sans",sans-serif; background:#fff; color:var(--text); line-height:2; -webkit-font-smoothing:antialiased; overflow-x:hidden; padding-bottom:84px;}
+.wrap{max-width:680px; margin:0 auto; padding:0 20px;}
+header.site{background:var(--navy2); color:#fff; padding:12px 18px; text-align:center;}
+header.site .lg{font-size:13px; font-weight:800; letter-spacing:.14em; color:#f3cdd7;}
+
+.hero{background:linear-gradient(168deg,#eaf3fa 0%,#f7fafc 46%,#fbeef1 100%); text-align:center; padding:40px 0 34px;}
+.hero .chip{display:inline-block; background:var(--navy); color:#fff; border-radius:999px; padding:6px 20px; font-size:12px; font-weight:700; letter-spacing:.14em; margin-bottom:14px;}
+.hero h1{color:var(--navy2); font-size:clamp(22px,6.2vw,32px); line-height:1.5; font-weight:800;}
+.hero h1 .em{color:var(--pink2);}
+.hero p.l{font-size:13.5px; margin-top:10px;}
+.deadline{margin-top:16px; display:inline-block; background:#fff; border:1.5px solid #ecd0d6; border-radius:14px; padding:10px 22px;}
+.deadline b{color:var(--pink2); font-size:15px; font-weight:800;}
+.deadline .cd{display:block; font-size:12.5px; color:var(--navy2); font-weight:800; margin-top:2px;}
+
+section{padding:48px 0;}
+section.alt{background:var(--bg);}
+section.altpink{background:var(--pinkbg);}
+.eyebrow{text-align:center; font-size:clamp(20px,5.4vw,26px); letter-spacing:.2em; color:var(--navy2); font-weight:800;}
+.eyebrow::after{content:""; display:block; width:52px; height:4px; border-radius:2px; margin:12px auto 0; background:linear-gradient(90deg,var(--pink2),var(--blue));}
+.sectitle{text-align:center; font-size:clamp(17px,4.8vw,22px); color:var(--navy2); font-weight:800; line-height:1.8; margin-top:16px;}
+.seclead{text-align:center; font-size:12.5px; color:var(--muted); margin-top:6px;}
+
+.vd{position:relative; width:100%; aspect-ratio:16/9; background:#1d3149; border-radius:18px; overflow:hidden; box-shadow:0 12px 34px rgba(38,64,95,.18); margin-top:24px;}
+.vd iframe{position:absolute; inset:0; width:100%; height:100%; border:0;}
+.vnote{font-size:12px; color:var(--muted); text-align:center; margin-top:10px;}
+.expired{display:none; margin-top:24px; background:#fff; border:1.5px solid var(--line); border-radius:16px; padding:18px 20px; text-align:center; font-size:14px; font-weight:700; color:var(--navy2);}
+
+/* 目次（時間を押すと、その場面から再生） */
+.chap{display:none; margin-top:22px; background:#fff; border:1px solid var(--line); border-radius:16px; padding:14px 16px;}
+.chap h3{font-size:13px; color:var(--navy2); letter-spacing:.08em; margin-bottom:6px;}
+.chap ol{list-style:none;}
+.chap li{border-top:1px solid #eef3f7;}
+.chap li:first-child{border-top:0;}
+.chap button{display:flex; gap:12px; align-items:baseline; width:100%; background:none; border:0; padding:9px 2px; font:inherit; color:var(--text); text-align:left; cursor:pointer; line-height:1.7;}
+.chap button .t{flex:none; min-width:58px; font-weight:800; color:var(--pink2); font-variant-numeric:tabular-nums;}
+.chap .hint{font-size:11.5px; color:var(--muted); margin-top:6px;}
+
+.cta{text-align:center;}
+.ctabtn{display:block; max-width:420px; margin:22px auto 0; background:linear-gradient(135deg,#b06f7d,#cf8f9c); color:#fff; text-decoration:none; border-radius:999px; padding:15px 20px; font-size:17px; font-weight:800; letter-spacing:.06em; box-shadow:0 10px 24px rgba(176,111,125,.32);}
+.ctabtn small{display:block; font-size:11.5px; font-weight:700; letter-spacing:.04em; opacity:.95;}
+.ghostbtn{display:inline-block; background:#fff; color:var(--navy); border:2px solid #cdd8e4; border-radius:999px; padding:11px 24px; font-size:13.5px; font-weight:800; text-decoration:none; margin:8px 4px 0;}
+.steps{max-width:460px; margin:18px auto 0; text-align:left; background:#fff; border-radius:16px; padding:14px 18px; font-size:13.5px; border:1px solid #f0d9de;}
+.steps li{margin-left:1.2em;}
+footer{text-align:center; font-size:11.5px; color:var(--muted); padding:26px 16px 10px;}
+#ctaFix{text-align:center; position:fixed; left:0; right:0; bottom:0; z-index:60; background:rgba(255,255,255,.96); border-top:1px solid var(--line); padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));}
+#ctaFix .ctabtn{margin:0 auto; padding:12px 18px; font-size:16px;}
+</style>
+</head>
+<body>
+<header class="site"><div class="lg">BUCKET LIST × Re:che</div></header>
+
+<div class="hero">
+  <div class="wrap">
+    <div class="chip">アーカイブ限定公開</div>
+    <h1>11/21 スクール説明会＆<br>公開添削勉強会<br><span class="em">アーカイブ配信</span></h1>
+    <p class="l">当日の内容を、2本に分けてお届けします。</p>
+    <div class="deadline">
+      <b>公開は 11月25日（水）23:59 まで</b>
+      <span class="cd" id="cd"></span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">MOVIE 1</div>
+    <p class="sectitle">勉強会＆スクールのご説明</p>
+    <p class="seclead">約1時間。まずはこちらからご覧ください</p>
+    <div class="vd" id="v1box"></div>
+    <p class="vnote">音が出ます。イヤホンがあると聞き取りやすいです。</p>
+    <div class="chap" id="chap1"><h3>この動画の目次</h3><ol></ol><p class="hint">時間を押すと、その場面から再生されます。</p></div>
+    <div class="expired" id="exp1">アーカイブの公開は終了しました。ご質問は、LINEからいつでもどうぞ。</div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="eyebrow">MOVIE 2</div>
+    <p class="sectitle">質疑応答</p>
+    <p class="seclead">約1時間。当日いただいたご質問に、ひとつずつお答えしています</p>
+    <div class="vd" id="v2box"></div>
+    <div class="chap" id="chap2"><h3>この動画の目次</h3><ol></ol><p class="hint">時間を押すと、その場面から再生されます。</p></div>
+    <div class="expired" id="exp2">アーカイブの公開は終了しました。ご質問は、LINEからいつでもどうぞ。</div>
+  </div>
+</section>
+
+<section class="altpink">
+  <div class="wrap cta">
+    <div class="eyebrow">JOIN</div>
+    <p class="sectitle">一緒に始めたい方へ</p>
+    <p class="seclead">お申し込みとお支払い方法は、LINEでご案内します</p>
+    <a class="ctabtn" href="https://line.me/R/oaMessage/%40puz1675a/?Re%3Ache%E3%81%AB%E7%94%B3%E3%81%97%E8%BE%BC%E3%82%80"><small>LINEが開きます</small>参加する！</a>
+    <ol class="steps">
+      <li>上のボタンを押すと、LINEのトークが開きます</li>
+      <li>入力欄に入っている「Re:cheに申し込む」を、そのまま送信してください</li>
+      <li>お支払い方法のご案内が届きます</li>
+    </ol>
+    <div style="margin-top:18px;">
+      <a class="ghostbtn" href="https://kumiko0814.github.io/reche-faq/" target="_blank" rel="noopener">よくあるご質問</a>
+      <a class="ghostbtn" href="https://kumiko0814.github.io/reche-interview/" target="_blank" rel="noopener">生徒のインタビュー</a>
+      <a class="ghostbtn" href="https://kumiko0814.github.io/reche-pamphlet/" target="_blank" rel="noopener">スクールのパンフレット</a>
+    </div>
+    <p style="font-size:12.5px; color:#8a7d81; margin-top:16px;">気になることがあれば、<a href="https://line.me/R/oaMessage/%40puz1675a/" style="color:var(--pink2); font-weight:800;">LINEでひとこと</a>送ってくださいね。</p>
+  </div>
+</section>
+
+<footer>BUCKET LIST × Re:che（運営：株式会社Merone）</footer>
+
+<div id="ctaFix"><a class="ctabtn" href="https://line.me/R/oaMessage/%40puz1675a/?Re%3Ache%E3%81%AB%E7%94%B3%E3%81%97%E8%BE%BC%E3%82%80">参加する！</a></div>
+
+<script>
+/* ▼動画ID・公開期限・目次はここだけ直せば反映されます */
+var VIDEO1="zG-ZJyPCqMs";  // 11/21 勉強会&スクール説明パート
+var VIDEO2="NGeF3vUS0Tk";  // 11/21 質疑応答パート
+var END=new Date("2026-11-25T23:59:00+09:00").getTime();
+/* 目次：["時:分:秒", "見出し"] を入れると表示されます（空なら出ません） */
+var CHAPTERS1=[
+  ["0:00","はじめに・今日の流れ"],
+  ["2:34","始めて数日で成果が出た方たちの実例"],
+  ["5:09","最初の宿題（家の不要品の数・1日に出品できる数）"],
+  ["9:17","写真に時間をかけすぎない「60点で出品」"],
+  ["13:54","Keiさんは1日に何品出品している？"],
+  ["20:14","何から出すか（優先順位のつけ方）"],
+  ["27:11","スクールのご説明"],
+  ["30:50","仕入れ先のご紹介"],
+  ["39:11","AIの出品サポート"],
+  ["45:00","サポート体制（講師3人の個別グループなど）"],
+  ["51:14","イベント・福利厚生"],
+  ["55:01","費用と特典のご案内"],
+  ["58:01","お支払い方法"],
+  ["59:56","このあとの質疑応答について"]
+];
+var CHAPTERS2=[
+  ["0:00","BUCKET LISTのお二人へ：始めてみてどうでしたか"],
+  ["4:12","お二人がこのスクールを紹介している理由"],
+  ["9:00","「本当に私にできるのか」と迷っている方へ"],
+  ["15:03","ここからスクールへのご質問"],
+  ["16:33","副業禁止の会社でもできますか／失業保険について"],
+  ["18:46","やめたいときはどうなりますか"],
+  ["21:03","利益が出ない人はいますか"],
+  ["22:04","仕入れた品を自分で使ってもいいですか"],
+  ["23:52","入会金の分を回収できるか不安です"],
+  ["26:41","出品を続けられるか不安です"],
+  ["29:02","続けられるか・講師とのやりとりが負担にならないか"],
+  ["31:03","仕入れのジャンルは選べますか"],
+  ["33:03","お支払いについて（分割と、利益から払う考え方）"],
+  ["36:05","経費と確定申告の話"],
+  ["38:14","フルタイムで働きながら始めた人はいますか"],
+  ["39:29","家族が個人事業主の場合の確定申告"],
+  ["43:06","仕入れは毎月必要ですか／売上は自分のお金になりますか"],
+  ["46:08","入会金を少しずつ払うことはできますか"],
+  ["47:54","仕入れた品が売れ残ったら"],
+  ["50:10","家の不要品やヤフオクの出品も相談できますか"],
+  ["52:03","お支払い方法だけ相談したいとき"],
+  ["56:49","特典とお申し込みの期限"],
+  ["58:33","さいごに"]
+];
+(function(){
+  function sec(t){ var p=t.split(":").map(Number); return p.length===3 ? p[0]*3600+p[1]*60+p[2] : p[0]*60+p[1]; }
+  function mount(id,box,start){
+    var el=document.getElementById(box); if(!id||!el) return;
+    el.innerHTML='<iframe src="https://www.youtube.com/embed/'+id+'?rel=0'+(start?('&start='+start+'&autoplay=1'):'')+'" title="動画" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+  }
+  function chapters(list,wrapId,id,box){
+    var w=document.getElementById(wrapId); if(!list.length) return;
+    var ol=w.querySelector("ol");
+    list.forEach(function(c){
+      var li=document.createElement("li"), b=document.createElement("button");
+      b.type="button"; b.innerHTML='<span class="t"></span><span class="x"></span>';
+      b.querySelector(".t").textContent=c[0]; b.querySelector(".x").textContent=c[1];
+      b.onclick=function(){ mount(id,box,sec(c[0])); document.getElementById(box).scrollIntoView({behavior:"smooth",block:"center"}); };
+      li.appendChild(b); ol.appendChild(li);
+    });
+    w.style.display="block";
+  }
+  function fmt(ms){
+    var m=Math.floor(ms/60000), d=Math.floor(m/1440), h=Math.floor((m%1440)/60), mm=m%60;
+    return (d>0?("あと"+d+"日と"+h+"時間"+mm+"分"):("あと"+h+"時間"+mm+"分"))+" ご覧いただけます";
+  }
+  var live=true;
+  function tick(){
+    var left=END-Date.now(), cd=document.getElementById("cd");
+    if(left<=0){
+      cd.textContent="アーカイブの公開は終了しました";
+      ["v1box","v2box","chap1","chap2"].forEach(function(i){ document.getElementById(i).style.display="none"; document.getElementById(i).innerHTML=""; });
+      document.getElementById("exp1").style.display="block"; document.getElementById("exp2").style.display="block";
+      live=false; return;
+    }
+    cd.textContent=fmt(left); setTimeout(tick,30000);
+  }
+  tick();
+  if(live){ mount(VIDEO1,"v1box"); mount(VIDEO2,"v2box"); chapters(CHAPTERS1,"chap1",VIDEO1,"v1box"); chapters(CHAPTERS2,"chap2",VIDEO2,"v2box"); }
+})();
+</script>
+</body>
+</html>
